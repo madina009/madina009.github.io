@@ -1,17 +1,17 @@
 @font-face {
-  font-family: CenturyGothic; 
-  src: url(https://www.axis-praxis.org/fonts/webfonts/MutatorSans.ttf)
+  font-family: MyFont; 
+  src: url(https://madina009.github.io/canteenfontGX.ttf);
 }
 @keyframes pjanim {
   0% {
     color: yellow;
-    font-size: 10px;
+    font-size: 50px;
     font-variation-settings: "wght" 300, "wdth" 300; 
   }
   100% {
     color: BLUE;
     font-size: 150px;
-    font-variation-settings: "wght" 800, "wdth" 800;  
+    font-variation-settings: "wght" 800, "wdth" 2000;  
   }
 }
 
@@ -19,38 +19,60 @@
   0% {
     color: #E8DE80;
     font-size: 100px;
-    font-variation-settings: "wght" 800, "wdth" 800; 
+    font-variation-settings: "wght" 50, "wdth" 800; 
   }
   100% {
-    color: BLUE;
+    color: #4547CC;
     font-size: 100px;
     font-variation-settings: "wght" 800, "wdth" 800;  
   }
 }
 
 body {
-  color: #E8DE80; 
-  font-size: 50px; 
-  font-family: CenturyGothic;
-  text-align: center; 
-  background-color: #A01212;
+  color: #D91D25; 
+  font-size: 15px; 
+  font-family: Arial;
+  text-align: left; 
+  background-color: #FF99AC;
   
   }
 
 h1 {
-  color: #A01212;
-  font-size: 90px; 
+  color: white;
+  font-size: 40px; 
   text-align: center; 
-  font-family: CenturyGothic;
-  background-color: #E8DE80; 
-  animation: 10s infinite pjanim;
+  font-family: Arial;
 }
 
+h2 { color: #D91D25; 
+  font-size: 15px; 
+  font-family: Arial;
+  text-align: left;
+  margin-left: 100px;
+}
 
-h2 { 
-color: #E8DE80; }
+h3 { color: #D91D25; 
+  font-size: 15px; 
+  font-family: Arial;
+  text-align: right;
+  margin-right: 100 px;
+}
 
-h3{
+h4{
+  color: #D91D25; 
+  font-size: 15px; 
+  font-family: Arial;
+  text-align: center;
+} 
+  
+h5{
+  font-family: MyFont; 
   font-size:100px;
+  text-align: center; 
   animation: 10s infinite pjanim1;
+} 
+
+a {
+  text-decoration: none;
+  color: #D91D25;
 }
