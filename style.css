@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Mutator; 
+  src: url(https://www.axis-praxis.org/fonts/webfonts/MutatorSans.ttf);
+}
+@keyframes pjanim {
+  0% {
+    color: blue;
+    font-size: 10px;
+    font-variation-settings: "wght" 100, "wdth" 100; 
+  }
+  100% {
+    color: yellow;
+    font-size: 150px;
+    font-variation-settings: "wght" 800, "wdth" 800; 
+ 
+  }
+}
+body {
+  font-size: 20px; 
+  font-family: Helvetica;
+  text-align: center; 
+  background-color: #F0F0A0
+  
+  }
+
+h1 {
+  font-size: 90px; 
+  text-align: center; 
+  font-family: Mutator; 
+  animation: 3s infinite pjanim; 
+}
+
+h2 { 
+color: pink; }
+
+h3{
+  color: red;
+  background-color: black; 
+  font-size:100px;
+  font-family: Mutator;
+  font-variation-settings:"wght" 800,  "wdth" 1000 ; 
+}
