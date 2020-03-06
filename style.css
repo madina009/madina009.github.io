@@ -2,29 +2,50 @@
   font-family: MyFont; 
   src: url(https://madina009.github.io/canteenfontGX.ttf);
 }
-@keyframes pjanim {
-  0% {
-    color: yellow;
-    font-size: 50px;
-    font-variation-settings: "wght" 300, "wdth" 300; 
-  }
-  100% {
-    color: BLUE;
-    font-size: 150px;
-    font-variation-settings: "wght" 800, "wdth" 2000;  
-  }
-}
 
-@keyframes pjanim1 {
+@keyframes MainText {
   0% {
-    color: #E8DE80;
+    color: #D91D25;
     font-size: 100px;
     font-variation-settings: "wght" 50, "wdth" 800; 
   }
-  100% {
+  50% {
     color: #4547CC;
     font-size: 100px;
     font-variation-settings: "wght" 800, "wdth" 800;  
+  }
+    100% {
+    color: #D91D25;
+    font-size: 100px;
+    font-variation-settings: "wght" 50, "wdth" 800; 
+  }
+}
+
+
+
+@keyframes scrollleft{
+  
+  0%{ 
+  top: -1000px;
+  font-variation-settings: "wght" 50, "wdth" 800;
+  }
+  
+  100% {
+    top: 0px;
+    font-variation-settings: "wght" 800, "wdth" 800;  
+ 
+  }
+}
+
+@keyframes scrolltitle {
+  
+  0%{ 
+  left: -1000px;
+  }
+  
+  100% {
+    left: 1000px;
+ 
   }
 }
 
@@ -34,6 +55,7 @@ body {
   font-family: Arial;
   text-align: left; 
   background-color: #FF99AC;
+  padding:  30px; 
   
   }
 
@@ -42,25 +64,27 @@ h1 {
   font-size: 40px; 
   text-align: center; 
   font-family: Arial;
+  position: relative;
+  animation: 10s linear infinite scrolltitle;
 }
 
 h2 { color: #D91D25; 
-  font-size: 15px; 
+  font-size: 25px; 
   font-family: Arial;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 h3 { color: #D91D25; 
-  font-size: 15px; 
+  font-size: 25px; 
   font-family: Arial;
   text-align: right;
-  margin-right: 100 px;
+  margin-right: 200px;
 }
 
 h4{
   color: #D91D25; 
-  font-size: 15px; 
+  font-size: 25px; 
   font-family: Arial;
   text-align: center;
 } 
@@ -69,10 +93,34 @@ h5{
   font-family: MyFont; 
   font-size:100px;
   text-align: center; 
-  animation: 10s infinite pjanim1;
+  animation: 5s alternate linear infinite MainText;
 } 
 
 a {
   text-decoration: none;
   color: #D91D25;
+}
+
+#leftfood{
+ font-family: MyFont; 
+  font-size:50px;
+  color:white; 
+  background-color:#D91D25;
+  width: 100px; 
+  text-align: center; 
+  position: absolute;
+  animation: 5s alternate linear infinite scrollleft;
+}
+
+#rightfood{
+ font-family: MyFont; 
+  font-size:50px;
+  color:white; 
+  background-color:#D91D25;
+  width: 100px; 
+  text-align: center; 
+  position: absolute;
+  animation: 5s alternate-reverse linear infinite scrollleft;
+  
+  right: 30px;
 }
